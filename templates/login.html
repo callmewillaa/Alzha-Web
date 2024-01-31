@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alza Login</title>
+    <link rel="icon" href="/static/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body class="bg-[#f6f8fc]">
+    <section>
+        <div class="font-poppins w-full mx-auto flex items-center justify-center min-h-screen">
+            <div class="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0">
+                <div class="relative">
+                    <img src="/static/log.png" class="w-[450px] h-full hidden rounded-l-2xl md:block object-cover" alt="">
+                </div>
+                <div class="flex flex-col justify-center p-8 md:p-14">
+                    <span class="mb-3 text-3xl font-bold text-center">
+                        Selamat datang di Alzha Login
+                    </span>
+                    <span class="font-light text-gray-400 mb-8 text-center">
+                        Silakan masuk untuk mengakses semua fitur layanan kami dengan aman
+                    </span>
+                    <form class="space-y-4 md:space-y-6" method="POST" action="/login">
+                        <div class="">
+                            <label for="email" class="block mb-3 text-sm font-medium text-gray-900">Email</label>
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-l-lg ">
+                                    <svg class="w-5 h-5 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                                        <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                                        <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                                      </svg>
+                                </span>
+                                <input type="email" name="email" id="email" class="rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5" placeholder="Masukan Email" required="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <label for="password" class="block mb-3 text-sm font-medium text-gray-900">Password</label>
+                            <div class="flex mb-3">
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-l-lg ">
+                                    <svg class="w-5 h-5 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+                                        <path d="M14 7h-1.5V4.5a4.5 4.5 0 1 0-9 0V7H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Zm-5 8a1 1 0 1 1-2 0v-3a1 1 0 1 1 2 0v3Zm1.5-8h-5V4.5a2.5 2.5 0 1 1 5 0V7Z"/>
+                                      </svg>
+                                </span>
+                                <input type="password" name="password" id="password" class="rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5" placeholder="Masukan Password" required="">
+                            </div>
+                        </div> 
+                        <button type="submit" class="mb-5 w-full px-5 py-2.5 text-white font-medium bg-sky-500 hover:border-sky-500 hover:border hover:text-black hover:bg-white focus:ring-4 focus:outline-none focus:ring-sky-300 shadow-md shadow-sky-500/50 rounded-lg text-center hover:scale-105 duration-300">
+                            Login
+                        </button>
+                        
+                    </form>
+                    <span class="text-base font-normal text-gray-500 text-center mt-5">
+                        Belum Punya Akun ? 
+                        <a href="/register" class="text-sky-500 font-medium">Daftar</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

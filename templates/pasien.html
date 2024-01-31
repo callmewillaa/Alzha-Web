@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <title>Klasifikasi Alzheimer</title>
+    <link rel="icon" href="/static/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#f6f8fc]">
+    <!--To Run-->
+    <!-- npx tailwindcss -i ./static/src/input.css -o ./static/css/main.css --watch -->
+
+  <!--NAVAR SECTION-->
+    <!-- <nav class="bg-white font-poppins w-full mx-auto border-b border-gray-200 z-20 top-0 sticky">
+      <div class="max-w-screen-xl mx-auto p-2">
+        <div class="flex flex-col lg:flex-row">
+          <div class="flex justify-between items-center px-4 py-6 lg:py-0 ">
+            <div class="flex items-center">
+              <a href="#" class="text-3xl font-semibold flex items-center hover:scale-110 duration-300">
+                <img src="/static/logo.png" alt="" class="w-8 h-8">
+                <span class="text-slate-900 ml-3 font-extrabold">Alzha</span>
+              </a>
+            </div>
+            <div>
+              <button type="button" class="block lg:hidden text-white bg-sky-500 hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-sky-300 shadow-lg shadow-sky-500/50 font-medium rounded-lg text-sm px-4 py-2 text-center " id="mobileMenuBtn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            </div>
+          </div>
+          <div class="flex-grow flex-col lg:flex-row hidden w-full md:flex md:w-auto " id="mobileMenu">
+            <div class="flex-grow flex lg:flex-row justify-center items-center py-4 lg:py-0">
+              <div class="flex flex-col lg:flex-row justify-center items-center font-medium text-lg">
+                <a href="#home" class="block px-5 py-3 lg:py-5 text-slate-900 hover:text-sky-400 hover:scale-125 duration-300">Home</a>
+                <a href="#about" class="block px-5 py-3 lg:py-5 text-slate-900 hover:text-sky-400 hover:scale-125 duration-300">About</a>
+                <a href="#service" class="block px-5 py-3 lg:py-5 text-slate-900 hover:text-sky-400 hover:scale-125 duration-300">Service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+  <!--NAVAR SECTION-->
+  
+
+  <!--HERO SECTION-->
+  <section id="home">
+    <div class="max-w-screen-xl mx-auto px-5 lg:py-6 md:py-0 ">
+      <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center font-poppins">
+        <div class="">
+          <h1 class="font-bold text-4xl leading-normal text-slate-800">Memahami Alzheimer Melalui Klasifikasi 
+            <span class="text-sky-500">Satu Langkah</span> Menuju Hidup Penuh Harapan <span class="text-sky-500">dan Kesadaran</span>
+          </h1>
+          <p class="font-normal mt-2 leading-relaxed text-slate-600">Selamat datang di langkah awal menuju kesadaran mengenai Alzheimer, 
+            sebuah perjalanan untuk menciptakan generasi yang lebih sehat.
+          </p>
+          <div class="flex mt-12">
+            <a class="text-white py-2.5 px-5 mb-2 rounded-lg font-normal text-lg inline-flex bg-sky-500 hover:bg-sky-400 focus:ring-4 focus:outline-none focus:ring-sky-300 shadow-lg shadow-sky-500/50 hover:scale-125 duration-300" 
+            href="#about">Jelajahi Alzheimer</a>
+            <a class="ml-10 items-center text-white py-2.5 px-5 mb-2 rounded-lg  font-normal text-lg inline-flex bg-slate-700 hover:bg-slate-600 focus:ring-4 focus:outline-none focus:ring-slate-400 shadow-lg shadow-slate-700/50 hover:scale-125 duration-300" 
+            href="#">
+            <svg class="w-6 h-6 text-white scale-75" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 16">
+              <path d="M0 .984v14.032a1 1 0 0 0 1.506.845l12.006-7.016a.974.974 0 0 0 0-1.69L1.506.139A1 1 0 0 0 0 .984Z"/>
+            </svg>
+            <span class="ml-2">Watch Video</span>
+          </a>
+        </div>
+        </div>
+        <div class="ml-5">
+          <img src="/static/hero.png" alt="hero-img" class="cursor-pointer hover:scale-105 duration-300 drop-shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--HERO SECTION-->
+
+  <!-- FEATURE SECTION -->
+  <section id="fitur">
+    <div class="max-w-screen-xl mx-auto py-10 font-poppins mt-10">
+      <div class="text-center mb-14 m-auto md:w-1/2">
+        <h4 class="font-semibold text-2xl text-sky-500 mb-4">Fitur Alzheimer</h4>
+        <h1 class="font-bold text-3xl text-slate-700">Satu Langkah Untuk Menuju Kesadaran</h1>
+        <p class="font-normal text-base mt-4 leading-relaxed text-slate-700">Langkah awal menuju kesadaran mengenai Alzheimer, 
+          sebuah perjalanan untuk menciptakan generasi yang lebih sehat.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-5 bg-slate-100 rounded-3xl p-2 shadow-md">
+          <div class="font-poppins flex flex-col items-center text-center max-w-screen-xl mx-auto px-5 lg:py-6 md:py-0">
+            <div class="rounded-full bg-sky-500 w-16 h-16 flex items-center justify-center">
+              <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 4c0 1.657-3.582 3-8 3S1 5.657 1 4m16 0c0-1.657-3.582-3-8-3S1 2.343 1 4m16 0v6M1 4v6m0 0c0 1.657 3.582 3 8 3s8-1.343 8-3M1 10v6c0 1.657 3.582 3 8 3s8-1.343 8-3v-6"/>
+              </svg>
+            </div>
+            <div class="mt-6">
+              <span class="font-semibold text-2xl text-slate-700">11K+ Dataset</span>
+              <span class="mt-1 flex text-base font-normal text-slate-800">Alzheimer Sangat Ringan,
+                Alzheimer Ringan, Alzheimer Sedang dan Tidak Terkena Alzheimer.
+              </span>
+            </div>
+          </div>
+          <div class="font-poppins flex flex-col items-center text-center max-w-screen-xl mx-auto px-5 lg:py-6 md:py-0">
+            <div class="rounded-full bg-sky-500 w-16 h-16 flex items-center justify-center">
+              <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16.5A2.493 2.493 0 0 1 6.51 18H6.5a2.468 2.468 0 0 1-2.4-3.154 2.98 2.98 0 0 1-.85-5.274 2.468 2.468 0 0 1 .921-3.182 2.477 2.477 0 0 1 1.875-3.344 2.5 2.5 0 0 1 3.41-1.856A2.5 2.5 0 0 1 11 3.5m0 13v-13m0 13a2.492 2.492 0 0 0 4.49 1.5h.01a2.467 2.467 0 0 0 2.403-3.154 2.98 2.98 0 0 0 .847-5.274 2.468 2.468 0 0 0-.921-3.182 2.479 2.479 0 0 0-1.875-3.344A2.5 2.5 0 0 0 13.5 1 2.5 2.5 0 0 0 11 3.5m-8 5a2.5 2.5 0 0 1 3.48-2.3m-.28 8.551a3 3 0 0 1-2.953-5.185M19 8.5a2.5 2.5 0 0 0-3.481-2.3m.28 8.551a3 3 0 0 0 2.954-5.185"/>
+              </svg>
+            </div>
+            <div class="mt-6">
+              <span class="font-semibold text-2xl text-slate-700">MRI Otak</span>
+              <span class="mt-1 flex text-base font-normal text-slate-800">Alzheimer Sangat Ringan,
+                Alzheimer Ringan, Alzheimer Sedang dan Tidak Terkena Alzheimer.
+              </span>
+            </div>
+          </div>
+          <div class="font-poppins flex flex-col items-center text-center max-w-screen-xl mx-auto px-5 lg:py-6 md:py-0">
+            <div class="rounded-full bg-sky-500 w-16 h-16 flex items-center justify-center">
+              <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+                <path fill="currentColor" d="M11.045 7.514a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-4.572 3.072L3.857 15.92h7.949l-1.811-3.37-1.61 2.716-1.912-4.679Z"/>
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 1v4a1 1 0 0 1-1 1H1m14 12a.97.97 0 0 1-.933 1H1.933A.97.97 0 0 1 1 18V5.828a2 2 0 0 1 .586-1.414l2.828-2.828A2 2 0 0 1 5.828 1h8.239A.97.97 0 0 1 15 2v16ZM11.045 7.514a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM3.857 15.92l2.616-5.333 1.912 4.68 1.61-2.717 1.81 3.37H3.858Z"/>
+              </svg>
+            </div>
+            <div class="mt-6">
+              <span class="font-semibold text-2xl text-slate-700">Image Klasifikasi</span>
+              <span class="mt-1 flex text-base font-normal text-slate-800">Alzheimer Sangat Ringan,
+                Alzheimer Ringan, Alzheimer Sedang dan Tidak Terkena Alzheimer.
+              </span>
+            </div>
+          </div>
+          <div class="font-poppins flex flex-col items-center text-center max-w-screen-xl mx-auto px-5 lg:py-6 md:py-0">
+            <div class="rounded-full bg-sky-500 w-16 h-16 flex items-center justify-center">
+              <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h6m-6 4h6m-6 4h6M1 1v18l2-2 2 2 2-2 2 2 2-2 2 2V1l-2 2-2-2-2 2-2-2-2 2-2-2Z"/>
+              </svg>
+            </div>
+            <div class="mt-6">
+              <span class="font-semibold text-2xl text-slate-700">Riwayat Klasifikasi</span>
+              <span class="mt-1 flex text-base font-normal text-slate-800">Alzheimer Sangat Ringan,
+                Alzheimer Ringan, Alzheimer Sedang dan Tidak Terkena Alzheimer.
+              </span>
+            </div>
+          </div>
+      </div>
+      <!-- <div class="grid lg:grid-cols-3 gap-10 lg:gap-8 px-4 lg:px8">
+        <div class="border-2 border-solid py-11 px-6 rounded-2xl cursor-pointer text-center hover:scale-105 duration-300">
+          <div class="inline-block">
+            <svg class="w-16 h-16 text-teal-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 4c0 1.657-3.582 3-8 3S1 5.657 1 4m16 0c0-1.657-3.582-3-8-3S1 2.343 1 4m16 0v6M1 4v6m0 0c0 1.657 3.582 3 8 3s8-1.343 8-3M1 10v6c0 1.657 3.582 3 8 3s8-1.343 8-3v-6"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold py-2 text-slate-900">11K+ Database</h3>
+          <p class="">Alzheimer Sangat Ringan, Alzheimer Ringan, Alzheimer Sedang dan Tidak Terkena Alzheimer</p>
+        </div>
+        <div class="border-2 border-solid py-11 px-6 rounded-2xl cursor-pointer text-center hover:scale-105 duration-300">
+          <div class="inline-block">
+            <svg class="w-16 h-16 text-teal-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
+              <path fill="currentColor" d="M13 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM7.565 7.423 4.5 14h11.518l-2.516-3.71L11 13 7.565 7.423Z"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 1H2a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM7.565 7.423 4.5 14h11.518l-2.516-3.71L11 13 7.565 7.423Z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold py-2 text-slate-900">Image MRI Database</h3>
+          <p class="">Alzheimer Sangat Ringan, Alzheimer Ringan, Alzheimer Sedang dan Tidak Terkena Alzheimer</p>
+        </div>
+        <div class="border-2 border-solid py-11 px-6 rounded-2xl cursor-pointer text-center hover:scale-105 duration-300">
+          <div class="inline-block">
+            <svg class="w-16 h-16 text-teal-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+              <path fill="currentColor" d="M11.045 7.514a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-4.572 3.072L3.857 15.92h7.949l-1.811-3.37-1.61 2.716-1.912-4.679Z"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 1v4a1 1 0 0 1-1 1H1m14 12a.97.97 0 0 1-.933 1H1.933A.97.97 0 0 1 1 18V5.828a2 2 0 0 1 .586-1.414l2.828-2.828A2 2 0 0 1 5.828 1h8.239A.97.97 0 0 1 15 2v16ZM11.045 7.514a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM3.857 15.92l2.616-5.333 1.912 4.68 1.61-2.717 1.81 3.37H3.858Z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold py-2 text-slate-900">Image Klasifikasi</h3>
+          <p class="">Alzheimer Sangat Ringan, Alzheimer Ringan, Alzheimer Sedang dan Tidak Terkena Alzheimer</p>
+        </div>
+        
+      </div> -->
+    </div>
+  </section>
+  <!-- FEATURE SECTION -->
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="max-w-screen-xl mx-auto px-5 lg:py-6 md:py-0 mt-2">
+      <div class="text-center mb-14 m-auto md:w-1/2 font-poppins">
+        <h2 class="font-semibold text-2xl text-sky-500 mb-4">Tentang Alzheimer</h2>
+        <h1 class="font-bold text-3xl text-slate-700">Satu Langkah Untuk Menuju Kesadaran</h1>
+        <p class="font-normal text-base mt-4 leading-relaxed text-slate-800">Langkah awal menuju kesadaran mengenai Alzheimer, 
+          sebuah perjalanan untuk menciptakan generasi yang lebih sehat.
+        </p>
+      </div>
+      <div class="font-poppins container items-center grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="">
+          <h1 class="font-bold text-4xl leading-normal text-slate-800">
+            Apa Itu Penyakit Alzheimer ?
+          </h1>
+          <p class="font-normal text-base mt-2 leading-relaxed text-slate-600">
+            Alzheimer merupakan kelainan berupa penimbunan plak atau protein tidak normal dalam otak 
+            sehingga menyebabkan hilangnya sel neuron dan menjadi salah satu pemicu penyakit demensia 
+            yang dapat mengakibatkan terhambatnya aktivitas sehari-hari karena penurunan daya ingat, 
+            kesulitan dalam berkomunikasi, tidak dapat berpikir jernih, terjadinya perubahan sikap dan 
+            perilaku hingga menimbulkan hilangnya kemampuan untuk mengurus diri sendiri.
+          </p>
+          <h3 class="font-bold text-xl leading-normal text-slate-800 mt-6">
+            Jenis - Jenis Penyakit Alzheimer
+          </h3>
+          <p class="font-normal mt-2 leading-relaxed text-slate-700">Selamat datang di langkah awal menuju kesadaran mengenai Alzheimer, 
+            sebuah perjalanan untuk menciptakan generasi yang lebih sehat.
+          </p>
+          <div class="flex items-center mt-6">
+            <div class="flex items-center justify-center">
+              <svg class="w-8 h-8 text-slate-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z"/>
+              </svg>
+            </div>
+            <div class="ml-4">
+              <span class="font-bold">Alzheimer Sangat Ringan</span>
+              <p>
+                Pada tahap ini, gejala Alzheimer jarang terdeteksi dan hanya dapat diidentifikasi melalui uji klinis. 
+                Gejala awal mungkin termasuk gangguan memori yang sangat ringan, 
+                seperti lupa menaruh barang atau hal-hal sepele lainnya.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center mt-6">
+            <div class="flex items-center justify-center">
+              <svg class="w-8 h-8 text-slate-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z"/>
+              </svg>
+            </div>
+            <div class="ml-4">
+              <span class="font-bold">Alzheimer Ringan</span>
+              <p>
+                Pada tahap ini, gejala dimulai dari munculnya gangguan memori yang lebih signifikan, 
+                sulit menemukan kata yang tepat, kesulitan menyusun rencana, serta kesulitan memecahkan masalah. Namun
+                masih dapat mengenai wajah seseorang.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center mt-6">
+            <div class="flex items-center justify-center">
+              <svg class="w-8 h-8 text-slate-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z"/>
+              </svg>
+            </div>
+            <div class="ml-4">
+              <span class="font-bold">Alzheimer Sedang</span>
+              <p>
+                Pada tahap ini, gejala Alzheimer menjadi lebih parah. Penderita mengalami kebingungan 
+                dan lupa dengan peristiwa hidupnya, serta kesulitan dalam berkomunikasi
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center mt-6">
+            <div class="flex items-center justify-center">
+              <svg class="w-8 h-8 text-slate-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z"/>
+              </svg>
+            </div>
+            <div class="ml-4">
+              <span class="font-bold">Tidak Terkena Alzheimer</span>
+              <p>
+                Tahap ini mengacu pada kondisi di mana seseorang 
+                tidak menunjukkan gejala Alzheimer atau gejalanya sangat ringan sehingga tidak terdeteksi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img class="rounded-xl" src="/static/about.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT SECTION -->
+
+  <!-- SERVICE SECTION -->
+  <section id="service">
+    <div class="max-w-screen-xl mx-auto px-5 lg:py-6 md:py-0 mt-4">
+      <div class="text-center mb-7 m-auto md:w-1/2 font-poppins">
+        <h2 class="font-semibold text-2xl text-sky-500 mb-4">Layanan Klasifikasi Alzheimer</h2>
+        <h1 class="font-bold text-3xl text-slate-700">Satu Langkah Untuk Menuju Kesadaran</h1>
+        <p class="font-normal text-base mt-4 leading-relaxed text-slate-800">Langkah awal menuju kesadaran mengenai Alzheimer, 
+          sebuah perjalanan untuk menciptakan generasi yang lebih sehat.
+        </p>
+      </div>
+      <div class="border-b-2 border-gray-200"></div>
+      <ol class="relative border-s-2 border-gray-400 mt-12">                  
+          <li class="mb-10 ms-8 mt-6">            
+              <span class="absolute flex items-center justify-center w-8 h-8 bg-white shadow-2xl rounded-full  -start-4 ring-8 ring-sky-500 ">
+                <svg class="w-5 h-5 text-sky-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 19">
+                  <path d="M7.324 9.917A2.479 2.479 0 0 1 7.99 7.7l.71-.71a2.484 2.484 0 0 1 2.222-.688 4.538 4.538 0 1 0-3.6 3.615h.002ZM7.99 18.3a2.5 2.5 0 0 1-.6-2.564A2.5 2.5 0 0 1 6 13.5v-1c.005-.544.19-1.072.526-1.5H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h7.687l-.697-.7ZM19.5 12h-1.12a4.441 4.441 0 0 0-.579-1.387l.8-.795a.5.5 0 0 0 0-.707l-.707-.707a.5.5 0 0 0-.707 0l-.795.8A4.443 4.443 0 0 0 15 8.62V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.12c-.492.113-.96.309-1.387.579l-.795-.795a.5.5 0 0 0-.707 0l-.707.707a.5.5 0 0 0 0 .707l.8.8c-.272.424-.47.891-.584 1.382H8.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1.12c.113.492.309.96.579 1.387l-.795.795a.5.5 0 0 0 0 .707l.707.707a.5.5 0 0 0 .707 0l.8-.8c.424.272.892.47 1.382.584v1.12a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1.12c.492-.113.96-.309 1.387-.579l.795.8a.5.5 0 0 0 .707 0l.707-.707a.5.5 0 0 0 0-.707l-.8-.795c.273-.427.47-.898.584-1.392h1.12a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5ZM14 15.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+                </svg>
+              </span>
+              <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Masuk Sebagai Doktor Melalui Menu Login<span class="bg-sky-500 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">Doctor</span></h3>
+              <time class="block mb-2 text-sm font-normal leading-none ">Hanya Bisa Dilakukan Doktor</time>
+              <p class="mb-4 text-base font-normal mt-6">
+                Langkah pertama doktor membuat akun terlebih dahulu, kemudian masuk sebagai doktor dari
+                akun yang telah dibuat tadi, jika proses login berhasil maka akan diarahkan ke halaman klasifikasi.
+              </p>
+          </li>
+          <li class="mb-10 ms-8 mt-6">            
+              <span class="absolute flex items-center justify-center w-8 h-8 bg-white shadow-2xl rounded-full  -start-4 ring-8 ring-sky-500 ">
+                <svg class="w-5 h-5 text-sky-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                  <path d="M11 16a1 1 0 0 1-1-1v-1h2v1a1 1 0 0 1-1 1Z"/>
+                  <path d="M17.989 6.124a6.5 6.5 0 0 0-12.495-2.1A5 5 0 0 0 6 14h4V8.414l-.293.293a1 1 0 0 1-1.414-1.414l2-2a1 1 0 0 1 1.414 0l2 2a1 1 0 1 1-1.414 1.414L12 8.414V14h5a4 4 0 0 0 .989-7.876Z"/>
+                </svg>
+              </span>
+              <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Masuk Ke Halaman Klasifikasi<span class="bg-sky-500 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">Doctor</span></h3>
+              <time class="block mb-2 text-sm font-normal leading-none ">Hanya Bisa Dilakukan Doktor</time>
+              <p class="mb-4 text-base font-normal mt-6">
+                Langkah kedua adalah doktor akan diarahkan ke halaman untuk upload foto rontgen dari pasien.
+              </p>
+          </li>
+          <li class="mb-10 ms-8 mt-6">            
+              <span class="absolute flex items-center justify-center w-8 h-8 bg-white shadow-2xl rounded-full  -start-4 ring-8 ring-sky-500 ">
+                <svg class="w-5 h-5 text-sky-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M19 11V9a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L12 2.757V2a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L2.929 4.343a1 1 0 0 0 0 1.414l.536.536L2.757 8H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535L8 17.243V18a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H18a1 1 0 0 0 1-1Z"/>
+                    <path d="M10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                  </g>
+                </svg>
+              </span>
+              <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Proses Klasifikasi<span class="bg-sky-500 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">Doctor</span></h3>
+              <time class="block mb-2 text-sm font-normal leading-none ">Hanya Bisa Dilakukan Doktor</time>
+              <p class="mb-4 text-base font-normal mt-6">
+                Langkah ketiga adalah ketika doctor sudah mengupload gambar rontgen pasien, maka doctor
+                harus mengklik tombol klasifikasi dibagian bawah tombol upload gambar.
+              </p>
+          </li>
+          <li class="mb-10 ms-8 mt-6">            
+              <span class="absolute flex items-center justify-center w-8 h-8 bg-white shadow-2xl rounded-full  -start-4 ring-8 ring-sky-500 ">
+                <svg class="w-4 h-4 text-sky-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 1v4a1 1 0 0 1-1 1H1m4 6 2 2 4-4m4-8v16a.97.97 0 0 1-.933 1H1.933A.97.97 0 0 1 1 18V5.828a2 2 0 0 1 .586-1.414l2.828-2.828A2 2 0 0 1 5.828 1h8.239A.97.97 0 0 1 15 2Z"/>
+                </svg>
+              </span>
+              <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Hasil Klasifikasi <span class="bg-sky-500 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">Doctor</span></h3>
+              <time class="block mb-2 text-sm font-normal leading-none ">Hanya Bisa Dilakukan Doktor</time>
+              <p class="mb-4 text-base font-normal mt-6">
+                Langkah terakhir setelah mengklik tombol klasifikasi doctor otomatis akan diarahkan ke halaman hasil dari klasifikasi
+                dan akan muncul hasil klasifikasi yang keluar berupa gambar yang diupload dan probability jenis Alzheimer.
+              </p>
+          </li>
+          <li class="mb-10 ms-8 mt-6">            
+              <span class="absolute flex items-center justify-center w-8 h-8 bg-white shadow-2xl rounded-full  -start-4 ring-8 ring-sky-500 ">
+                <svg class="w-4 h-4 text-sky-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 18a.969.969 0 0 1-.933 1H1.933A.97.97 0 0 1 1 18V9l4-4m-4 5h5m3-4h5V1m5 1v12a.97.97 0 0 1-.933 1H9.933A.97.97 0 0 1 9 14V5l4-4h5.067A.97.97 0 0 1 19 2Z"/>
+                </svg>
+              </span>
+              <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Riwayat Klasifikasi <span class="bg-sky-500 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">Doctor & Pasien</span></h3>
+              <time class="block mb-2 text-sm font-normal leading-none ">Doktor & Pasien</time>
+              <p class="mb-4 text-base font-normal mt-6">
+                Setelah hasil klasifikasi muncul maka hasil klasifikasi tersebut akan tersimpan pada dashboard doctor, selain doctor
+                pasien juga dapat melihat dari riwayat klasifikasi yang telah dilakukan oleh doctor.
+              </p>
+          </li>
+      </ol>
+      
+    </div>
+  </section>
+  <!-- SERVICE SECTION -->
+  
+
+
+
+
+
+
+
+  <!-- CHATBOT -->
+  <div class="hidden bg-white w-[420px] fixed bottom-[90px] right-6 shadow-xl font-poppins rounded-lg " id="chatbot" data-status="closed">
+    <header class="bg-sky-500 text-white text-center overflow-hidden rounded-t-lg">
+        <h2 class="text-xl font-bold p-4">Alzha ChatBot</h2>
+    </header>
+    <ul id="chatbox" class="overflow-y-auto h-[400px] p-4 pr-5 pb-16">
+        <li id="chat-incoming" class="flex items-center">
+            <div class="bg-sky-500 h-10 w-10 mr-2.5 ml-2 self-end items-center flex justify-center rounded-xl">
+                <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M7.824 5.937a1 1 0 0 0 .726-.312 2.042 2.042 0 0 1 2.835-.065 1 1 0 0 0 1.388-1.441 3.994 3.994 0 0 0-5.674.13 1 1 0 0 0 .725 1.688Z"/>
+                    <path d="M17 7A7 7 0 1 0 3 7a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h1a1 1 0 0 0 1-1V7a5 5 0 1 1 10 0v7.083A2.92 2.92 0 0 1 12.083 17H12a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1a1.993 1.993 0 0 0 1.722-1h.361a4.92 4.92 0 0 0 4.824-4H17a3 3 0 0 0 3-3v-2a3 3 0 0 0-3-3Z"/>
+                </svg>
+            </div>
+            <p class="bg-slate-200 p-3 md:p-4 text-sm rounded-t-lg rounded-br-lg max-w-[75%] mt-5">Hai, selamat datang! Silahkan tanyakan saya tentang Alzheimer</p>
+        </li>
+        
+        <li id="chat-ongoing" class=" flex justify-end mt-5 mb-5">
+            <span>
+                
+                  <p class="bg-sky-500 text-sm hidden text-white p-3 md:p-4 rounded-t-lg rounded-bl-lg">Lorem ipsum dolor sit amet consectetur.</p>
+            </span>
+        </li>
+    </ul>
+    <div id="chat-input" class="flex absolute bottom-0 w-full border-t-2 py-2 px-5 bg-white">
+        <textarea placeholder="Masukan Pertanyaan" name="" id="" class="block p-2.5 h-14 text-sm w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300">
+            
+        </textarea>
+        <span id="send-btn" class="items-center justify-center flex ml-2 bg-sky-500 w-12 h-10 rounded-lg text-center mt-2">
+            <svg class="w-6 h-6 text-white cursor-pointer" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                <path d="m17.914 18.594-8-18a1 1 0 0 0-1.828 0l-8 18a1 1 0 0 0 1.157 1.376L8 18.281V9a1 1 0 0 1 2 0v9.281l6.758 1.689a1 1 0 0 0 1.156-1.376Z"/>
+              </svg>
+        </span>
+    </div>
+  </div>
+  <button id="buton-chatbot">
+    <div class="cursor-pointer flex bg-sky-500 w-14 h-14 bottom-5 right-6 shadow-xl hover:scale-125 duration-300 rounded-full fixed items-center justify-center">
+        <span class="absolute">
+            <svg class="w-7 h-7 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M7.824 5.937a1 1 0 0 0 .726-.312 2.042 2.042 0 0 1 2.835-.065 1 1 0 0 0 1.388-1.441 3.994 3.994 0 0 0-5.674.13 1 1 0 0 0 .725 1.688Z"/>
+                <path d="M17 7A7 7 0 1 0 3 7a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h1a1 1 0 0 0 1-1V7a5 5 0 1 1 10 0v7.083A2.92 2.92 0 0 1 12.083 17H12a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1a1.993 1.993 0 0 0 1.722-1h.361a4.92 4.92 0 0 0 4.824-4H17a3 3 0 0 0 3-3v-2a3 3 0 0 0-3-3Z"/>
+            </svg>
+        </span>
+    </div>
+  </button>
+  <!-- CHATBOT -->
+  <footer class="text-gray-600 font-poppins">
+    <!-- <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"> 
+    </div> -->
+    <div class="bg-gray-200">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class=" text-sm text-center sm:text-left">© 2023 Klasifikasi Alzheimer —
+          <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class=" ml-1" target="_blank">@alzha</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 ">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 ">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 ">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+    </footer>
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+      
+
+    
+
+    
+    
+    <script>
+      // Button navbar
+      document.getElementById('mobileMenuBtn').addEventListener('click', function () {
+          document.getElementById('mobileMenu').classList.toggle('hidden');
+      });
+      // Button navbar
+
+      // CHATBOT
+      document.addEventListener("DOMContentLoaded", function () {
+    const chatbotContainer = document.getElementById("chatbot");
+    const chatbotButton = document.getElementById("buton-chatbot");
+    const chatInput = document.getElementById("chat-input"); // Tambahkan ini
+
+    chatbotButton.addEventListener("click", function () {
+        // Toggle kelas 'hidden' pada elemen chatbot
+        chatbotContainer.classList.toggle("hidden");
+
+        // Periksa apakah chatbot sekarang terlihat
+        const isChatbotVisible = !chatbotContainer.classList.contains("hidden");
+
+        // Jika chatbot tidak terlihat, bersihkan textarea
+        if (!isChatbotVisible) {
+            chatInput.querySelector("textarea").value = "";
+        }
+    });
+
+    const sendBtn = document.getElementById("send-btn");
+    const chatbox = document.getElementById("chatbox");
+
+    sendBtn.addEventListener("click", function () {
+        const userMessage = chatInput.querySelector("textarea").value;
+        
+        // Kirim pertanyaan ke server Flask
+        fetch("/get_response", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ user_message: userMessage }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Tampilkan pertanyaan pengguna
+            const userLi = document.createElement("li");
+            userLi.className = "flex justify-end mt-5 mb-5";
+            userLi.innerHTML = `<span><p class="bg-sky-500 text-sm text-white p-3 md:p-4 rounded-t-lg rounded-bl-lg">${userMessage}</p></span>`;
+            chatbox.appendChild(userLi);
+
+            // Tampilkan jawaban chatbot
+            const chatbotLi = document.createElement("li");
+            chatbotLi.className = "flex items-center";
+            chatbotLi.innerHTML = `<div class="bg-sky-500 h-10 w-10 mr-2.5 ml-2 self-end items-center flex justify-center rounded-xl mb-8">
+                                    <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M7.824 5.937a1 1 0 0 0 .726-.312 2.042 2.042 0 0 1 2.835-.065 1 1 0 0 0 1.388-1.441 3.994 3.994 0 0 0-5.674.13 1 1 0 0 0 .725 1.688Z"/>
+                                            <path d="M17 7A7 7 0 1 0 3 7a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h1a1 1 0 0 0 1-1V7a5 5 0 1 1 10 0v7.083A2.92 2.92 0 0 1 12.083 17H12a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1a1.993 1.993 0 0 0 1.722-1h.361a4.92 4.92 0 0 0 4.824-4H17a3 3 0 0 0 3-3v-2a3 3 0 0 0-3-3Z"/>
+                                    </svg>
+                                  </div>
+                                  <p class="bg-slate-200 p-3 md:p-4 text-sm rounded-t-lg rounded-br-lg max-w-[75%] mb-8">${data.response}</p>`;
+            chatbox.appendChild(chatbotLi);
+
+            // Bersihkan textarea setelah mengirim pesan
+            chatInput.querySelector("textarea").value = "";
+        });
+    });
+});
+
+      // CHATBOT
+
+  </script>
+</body>
+</html>
